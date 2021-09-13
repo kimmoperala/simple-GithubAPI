@@ -2,9 +2,8 @@
   "name": "dalian",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd back && npm start\" \"cd front && npm start\" ",
+    "dev": "concurrently \"cd back && npm run dev\" \"cd front && npm start\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +17,7 @@
   },
   "homepage": "https://github.com/kimmoperala/dalian#readme",
   "devDependencies": {
-    "concurrently": "^6.2.1"
+    "concurrently": "^6.2.1",
+    "prettier": "2.4.0"
   }
 }
