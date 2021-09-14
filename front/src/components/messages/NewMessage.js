@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 
 import Card from "../ui/Card";
 import classes from "./NewMessage.module.css";
+import axios from "axios";
 
 function NewMessage() {
   const titleInputRef = useRef();
@@ -17,16 +18,22 @@ function NewMessage() {
 
     const enteredTitle = titleInputRef.current.value;
     const enteredText = textInputRef.current.value;
-    const enteredImportance = checked;
 
     const newMessage = {
       person: "Pena",
       title: enteredTitle,
       text: enteredText,
-      importance: enteredImportance,
+      likes: 0,
+      dislikes: 0,
+      importance: checked,
     };
-
     console.log(newMessage);
+
+    axios
+      .post("http://localhost:3001/api/messages", newMessage)
+      .then((response) => {
+        console.log(response);
+      });
   }
 
   return (
