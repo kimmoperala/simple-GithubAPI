@@ -1,24 +1,28 @@
 const mongoose = require("mongoose");
 
-const url = process.env.MONGODB_URI;
-
-console.log("yhdistetään...");
-mongoose
-  .connect(url)
-  .then((result) => {
-    console.log("yhdistetty MongoDB:hen");
-  })
-  .catch((error) => {
-    console.log("ongelmia MongoDB:hen yhdistämisessä", error.message);
-  });
-
 const messageSchema = new mongoose.Schema({
-  person: String,
-  title: String,
-  text: String,
-  likes: Number,
-  dislikes: Number,
-  importance: Boolean,
+  person: {
+    type: String,
+    required: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
+  text: {
+    type: String,
+    required: true,
+  },
+  likes: {
+    type: Number,
+  },
+  dislikes: {
+    type: Number,
+  },
+  importance: {
+    type: Boolean,
+    required: true,
+  },
 });
 
 messageSchema.set("toJSON", {
