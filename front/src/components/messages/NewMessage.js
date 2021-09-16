@@ -41,7 +41,7 @@ function NewMessage() {
       <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
           <label>Aihe</label>
-          <input type="text" required id="title" ref={titleInputRef} />
+          <input type="text" id="title" ref={titleInputRef} />
         </div>
         <div className={classes.control}>
           <label>Viesti</label>
