@@ -1,0 +1,57 @@
+@media only screen and (max-width: 800px) {
+    .searchBox, topButton {
+    }
+    .topRow{
+        align-items: center;
+        display: flex;
+        background-color: white;
+        margin-bottom: 3%;
+    }
+}
+
+.cardDeck {
+    display: flex;
+    flex-wrap: wrap;
+}
+.searchBox{
+    background-color: white;
+    color: #1A2238;
+    height: 3rem;
+    font-size: x-large;
+    border-radius: 17px;
+}
+.topRow{
+    align-items: center;
+    display: flex;
+    color: white;
+    margin-left: 2rem;
+    margin-bottom: 3%;
+}
+.topButton{
+    background-color: white;
+    border-radius: 17px;
+    margin-left: 10%;
+    border-width: 5px;
+    border-color: darkgray;
+    color: #FF6A3D;
+    font-size: large;
+}
+.profilePicture{
+    height: 100px;
+    width: 100px;
+}
+.normalButton{
+    background-color: #FF6A3D;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: darkgray;
+    color: white;
+}
+.spinner {
+    position: center;
+}
+.textFieldColor {
+    color: #FF6A3D
+}

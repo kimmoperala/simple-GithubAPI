@@ -1,8 +1,8 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Card from "../ui/Card";
 import classes from "./NewMessage.module.css";
-import axios from "axios";
+import messageService from "../../services/messages";
 
 function NewMessage() {
   const titleInputRef = useRef();
@@ -20,20 +20,18 @@ function NewMessage() {
     const enteredText = textInputRef.current.value;
 
     const newMessage = {
-      person: "Pena",
       title: enteredTitle,
       text: enteredText,
       likes: 0,
       dislikes: 0,
       importance: checked,
     };
-    console.log(newMessage);
 
-    axios
-      .post("http://localhost:3001/api/messages", newMessage)
-      .then((response) => {
-        console.log(response);
-      });
+    messageService.create(newMessage).then((response) => {
+      console.log(response);
+    });
+    event.target.reset();
+    alert("Lisätty viesti");
   }
 
   return (

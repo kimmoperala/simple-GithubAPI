@@ -8,8 +8,8 @@ function MessageList(props) {
         <MessageItem
           key={message.id}
           id={message.id}
+          user={message.user}
           title={message.title}
-          person={message.person}
           text={message.text}
           likes={message.likes}
           dislikes={message.dislikes}

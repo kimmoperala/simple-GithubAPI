@@ -1,15 +1,16 @@
 import MessageList from "../components/messages/MessageList";
 import NewMessage from "../components/messages/NewMessage";
-import axios from "axios";
 import { useEffect, useState } from "react";
+import messageService from "../services/messages";
 
 function AllMessages() {
   const [isLoading, setIsLoading] = useState(true);
   const [allMessages, setAllMessages] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/api/messages").then((response) => {
-      setAllMessages(response.data);
+    messageService.getAll().then((messages) => {
+      setAllMessages(messages);
+      console.log(messages);
       setIsLoading(false);
     });
   }, []);
