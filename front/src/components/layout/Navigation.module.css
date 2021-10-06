@@ -1,5 +1,5 @@
 .header {
-    background-color: antiquewhite;
+    background-color: #FF6A3D;
     width: 100%;
     height: 5rem;
     display: flex;
@@ -7,7 +7,7 @@
 }
 .logo {
     font-size: 2rem;
-    color: black;
+    color: white;
 }
 
 .header ul {
@@ -25,5 +25,5 @@
 .header a {
     text-decoration: none;
     font-size: 1.5rem;
-    color: green;
+    color: white;
 }
