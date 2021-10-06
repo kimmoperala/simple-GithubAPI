@@ -48,6 +48,7 @@ function Github() {
 
   // Function for fetching the repos of the selected user
   const getRepos = (name) => {
+    setRepos([])
     setTopButton(name);
     setProfilePicture("Loading");
     console.log(name, "pyysi repoja!!");
@@ -72,6 +73,7 @@ function Github() {
       }
     });
   };
+
 
   return (
     <>
