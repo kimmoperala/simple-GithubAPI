@@ -1,7 +1,6 @@
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 
-
 import Layout from "./components/layout/Layout";
 import Github from "./pages/Github";
 

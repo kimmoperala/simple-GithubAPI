@@ -1,5 +1,5 @@
 {
-  "name": "dalian",
+  "name": "simple-github",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kimmoperala/dalian.git"
+    "url": "git+https://github.com/kimmoperala/simple-github.git"
   },
   "author": "Kimmo Perälä",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kimmoperala/dalian/issues"
+    "url": "https://github.com/kimmoperala/simple-github/issues"
   },
-  "homepage": "https://github.com/kimmoperala/dalian#readme",
+  "homepage": "https://github.com/kimmoperala/simple-github#readme",
   "devDependencies": {
     "concurrently": "^6.2.1",
     "prettier": "2.4.0"
