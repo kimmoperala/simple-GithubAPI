@@ -8,7 +8,7 @@ The project includes one page (Github.js), layout components (Layout.js and Navi
 and reusable components (Card.js and Notification.js)
 
 ## UI
-Pictures of UI are in directory [front/UI_photos](https://github.com/kimmoperala/simple-github/tree/main/front/UI_photos)
+Pictures of UI are in directory [front/UI_photos](https://github.com/kimmoperala/simple-GithubAPI/tree/main/front/UI_photos)
 
 
-![Picture of the UI](https://github.com/kimmoperala/simple-github/blob/main/front/UI_photos/example1.png)
+![Picture of the UI](https://github.com/kimmoperala/simple-GithubAPI/blob/main/front/UI_photos/example1.png)
